@@ -14,14 +14,6 @@
 
 */
 
-@supports (-webkit-text-stroke: 1px #fff) or (text-stroke: 1px #fff) {
-  .card__image-label {
-    text-stroke: 1px var(--stroke-color);
-    -webkit-text-stroke: 1px var(--stroke-color);
-    text-shadow: none;
-  }
-}
-
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
@@ -139,14 +131,19 @@
   font-weight: 400;
   top: 25px;
   right: 25px;
-  color: var(--accent-color);
+  text-transform: uppercase;
   opacity: 0.5;
   mix-blend-mode: hard-light;
-  -webkit-text-stroke: 1px var(--stroke-color);
+  color: var(--accent-color);
   text-shadow: 0 var(--stroke-color), 0 1px var(--stroke-color),
     0 -1px var(--stroke-color), 1px 0 var(--stroke-color);
 }
-
+@supports (-webkit-text-stroke: 1px #fff) or (text-stroke: 1px #fff) {
+  .card__image-label {
+    text-stroke: 1px #fff;
+    text-shadow: none;
+  }
+}
 .card__content {
   border: 2px solid var(--border-color);
   padding: 25px;
