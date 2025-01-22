@@ -138,10 +138,11 @@
   text-shadow: 0 var(--stroke-color), 0 1px var(--stroke-color),
     0 -1px var(--stroke-color), 1px 0 var(--stroke-color);
 }
-@supports (-webkit-text-stroke: 1px #fff) or (text-stroke: 1px #fff) {
+@supports (text-stroke: 1px var(--stroke-color)) or
+  (-webkit-text-stroke: var(--stroke-color)) {
   .card__image-label {
-    text-stroke: 1px #fff;
     text-shadow: none;
+    -webkit-text-stroke: 1px var(--stroke-color);
   }
 }
 .card__content {

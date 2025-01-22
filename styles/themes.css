@@ -12,7 +12,7 @@
   --linear-gradient-second: #004306;
   --bg-image: url("../svg/pattern-dark.svg");
   --mix-blend-color: #00cc14;
-  --stroke-color: #000;
+  --stroke-color: #00cc14;
   --header-weight: 785;
   --text-weight: 465;
 }
@@ -26,7 +26,7 @@
     --linear-gradient-first: #007f0c;
     --linear-gradient-second: #004306;
     --bg-image: url("../svg/pattern-dark.svg");
-    --stroke-color: #000;
+    --stroke-color: #00cc14;
     --header-weight: 785;
     --text-weight: 465;
   }
