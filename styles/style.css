@@ -25,26 +25,13 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-
   font-family: var(--main-font), sans-serif;
-  font-variation-settings: 'wght' 400;
-
-  background-image: repeating-linear-gradient(
-      to bottom,
-      var(--bg-color) 0px 2px,
-      transparent 2px 4px
-    ),
-    repeating-linear-gradient(
-      to right,
-      var(--bg-color) 0 2px,
-      transparent 2px 4px
-    ),
-    linear-gradient(
-      180deg,
-      var(--linear-gradient-first) 0%,
-      var(--linear-gradient-second) 100%
-    );
-  background-size: cover;
+  font-variation-settings: "wght" 400;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  background-image: var(--bg-image);
+  background-size: 4px;
+  background-repeat: repeat;
   background-attachment: fixed;
 }
 
@@ -101,7 +88,7 @@
   line-height: normal;
   font-style: normal;
   padding: 5px 22px 5px 8px;
-  font-variation-settings: 'wght' var(--header-weight);
+  font-variation-settings: "wght" var(--header-weight);
 }
 
 .card__image {
@@ -145,7 +132,6 @@
   filter: hue-rotate(100deg) opacity(70%);
 }
 
-
 .card__image-label {
   position: absolute;
   font-family: var(--accent-font), sans-serif;
@@ -188,7 +174,7 @@
   font-size: 18px;
   line-height: 21px;
   font-weight: var(--text-weight);
-  font-variation-settings: 'wght' var(--text-weight);
+  font-variation-settings: "wght" var(--text-weight);
 }
 
 .card__content-text:nth-child(1) {
@@ -222,7 +208,7 @@
 }
 
 .card__like-button::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -302,7 +288,7 @@
 }
 
 .button-remember::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -404,7 +390,7 @@
 }
 
 .button-save::before {
-  content: '';
+  content: "";
   top: 0;
   left: 0;
   display: block;
@@ -433,7 +419,6 @@
   white-space: normal;
   max-inline-size: 234px;
 }
-
 
 @media screen and (width <= 375px) {
   .card__image-label {

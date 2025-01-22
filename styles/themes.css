@@ -10,6 +10,7 @@
   --accent-color: #00cc14;
   --linear-gradient-first: #007f0c;
   --linear-gradient-second: #004306;
+  --bg-image: url("../svg/pattern-dark.svg");
   --mix-blend-color: #00cc14;
   --stroke-color: #000;
   --header-weight: 785;
@@ -24,6 +25,7 @@
     --accent-color: #00cc14;
     --linear-gradient-first: #007f0c;
     --linear-gradient-second: #004306;
+    --bg-image: url("../svg/pattern-dark.svg");
     --stroke-color: #000;
     --header-weight: 785;
     --text-weight: 465;
@@ -32,9 +34,10 @@
 
 :root.theme-light {
   --border-color: #000;
-  --bg-color: #d3d3d3;
+  --bg-color: #fff;
   --linear-gradient-first: #e7e7e7;
   --linear-gradient-second: #1a1a1a;
+  --bg-image: url("../svg/pattern-light.svg");
   --accent-color: #000;
   --mix-blend-color: #fff;
   --border-color: #000;
@@ -46,10 +49,11 @@
 @media (prefers-color-scheme: light) {
   :root {
     --border-color: #000;
-    --bg-color: #d3d3d3;
+    --bg-color: #fff;
     --linear-gradient-first: #e7e7e7;
     --mix-blend-color: #fff;
     --linear-gradient-second: #1a1a1a;
+    --bg-image: url("../svg/pattern-light.svg");
     --accent-color: #000;
     --border-color: #000;
     --stroke-color: #fff;
