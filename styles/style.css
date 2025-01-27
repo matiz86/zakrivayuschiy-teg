@@ -19,11 +19,22 @@
   min-block-size: 100dvb;
   font-family: var(--main-font), sans-serif;
   font-variation-settings: "wght" 400;
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  background-image: var(--bg-image);
-  background-size: 4px;
-  background-repeat: repeat;
+  background-image: repeating-linear-gradient(
+      to bottom,
+      var(--bg-color) 0px 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(
+      to right,
+      var(--bg-color) 0 2px,
+      transparent 2px 4px
+    ),
+    linear-gradient(
+      180deg,
+      var(--linear-gradient-first) 0%,
+      var(--linear-gradient-second) 100%
+    );
+  background-size: cover;
   background-attachment: fixed;
 }
 
@@ -138,13 +149,14 @@
   text-shadow: 0 var(--stroke-color), 0 1px var(--stroke-color),
     0 -1px var(--stroke-color), 1px 0 var(--stroke-color);
 }
-@supports (text-stroke: 1px var(--stroke-color)) or
-  (-webkit-text-stroke: var(--stroke-color)) {
+@supports (-webkit-text-stroke: 1px #fff) or (text-stroke: 1px #fff) {
   .card__image-label {
-    text-shadow: none;
+    text-stroke: 1px var(--stroke-color);
     -webkit-text-stroke: 1px var(--stroke-color);
+    text-shadow: none;
   }
 }
+
 .card__content {
   border: 2px solid var(--border-color);
   padding: 25px;
