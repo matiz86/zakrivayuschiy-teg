@@ -18,7 +18,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--main-font), sans-serif;
-  font-variation-settings: "wght" 400;
+  font-variation-settings: "wdth" var(--main-font-weight);
   background-image: repeating-linear-gradient(
       to bottom,
       var(--bg-color) 0px 2px,
@@ -87,11 +87,10 @@
   font-family: var(--main-font), sans-serif;
   border: 2px solid var(--border-color);
   font-size: 18px;
-  font-weight: var(--header-weight);
+  font-weight: var(--heading-font-weight);
   line-height: normal;
   font-style: normal;
   padding: 5px 22px 5px 8px;
-  font-variation-settings: "wght" var(--header-weight);
 }
 
 .card__image {
@@ -149,7 +148,7 @@
   text-shadow: 0 var(--stroke-color), 0 1px var(--stroke-color),
     0 -1px var(--stroke-color), 1px 0 var(--stroke-color);
 }
-@supports (-webkit-text-stroke: 1px #fff) or (text-stroke: 1px #fff) {
+@supports ((-webkit-text-stroke: 1px #fff) or (text-stroke: 1px #fff)) {
   .card__image-label {
     text-stroke: 1px var(--stroke-color);
     -webkit-text-stroke: 1px var(--stroke-color);
@@ -234,13 +233,13 @@
   cursor: pointer;
 }
 
-.button__text {
+/* .button__text {
   font-size: 14px;
   font-family: var(--accent-font), sans-serif;
   color: var(--mix-blend-color);
+  mix-blend-mode: difference;
   font-weight: 400;
   font-style: normal;
-  mix-blend-mode: difference;
   line-height: 12.6px;
 }
 
@@ -252,7 +251,7 @@
   font-weight: 400;
   font-style: normal;
   line-height: 12.6px;
-}
+} */
 
 .floppy {
   fill: var(--mix-blend-color);
