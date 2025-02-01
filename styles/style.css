@@ -87,7 +87,7 @@
   font-family: var(--main-font), sans-serif;
   border: 2px solid var(--border-color);
   font-size: 18px;
-  font-weight: var(--heading-font-weight);
+  font-variation-settings: var(--heading-font-weight);
   line-height: normal;
   font-style: normal;
   padding: 5px 22px 5px 8px;
