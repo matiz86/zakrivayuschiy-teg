@@ -20,13 +20,9 @@
     />
     <link rel="apple-touch-icon" href="./images/mobile-favicon.png" />
     <meta name="color-scheme" content="dark light" />
-
-    <script src="./scripts/set-theme.js"></script>
   </head>
   <body class="page">
-    <header class="content header">
-      <a class="header__title">&lt;/html&gt;</a>
-      <h1 class="header__description">закрывающий тег</h1>
+    <header class="header">
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -536,7 +532,7 @@
             fill="currentColor"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <use href="./svg/floppy.svg#floppy" />
+            <use href="./svg/floppy.svg#floppy"></use>
           </svg>
           <span class="btn">Сохранить на память</span>
         </button>
@@ -549,7 +545,7 @@
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <use href="./svg/floppy.svg#floppy" />
+            <use href="./svg/floppy.svg#floppy"></use>
           </svg>
           <span class="dialog__flex-text"
             >Вставьте дискету, чтобы продолжить</span
@@ -564,6 +560,7 @@
         </button>
       </dialog>
     </main>
+    <script src="./scripts/set-theme.js"></script>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
